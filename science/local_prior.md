@@ -93,7 +93,7 @@ The unsigned collision probability is
 Let $`p_P=w_Q/2`$ for each signed target $`P=\pm Q`$, and define the prediction operator as in [Collective statistics](collective_statistics.md), but with this prior. Pauli orthogonality again removes all pairs other than $`Q=\pm P`$. Direct expansion gives
 
 ```math
-\operatorname{Tr}(X_T^2)
+\mathrm{Tr}(X_T^2)
 =\frac{3^{-k}}{2dD^T}
 \left[(1+\gamma^2)^T-(1-\gamma^2)^T\right].
 ```

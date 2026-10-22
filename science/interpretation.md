@@ -27,7 +27,7 @@ A Bell measurement on a pair of independently drawn specimens turns their quantu
 
 ```math
 R=(-1)^{q(p)+[p,Z]}F,
-\qquad Z\sim\operatorname{Unif}(\mathbb F_2^{2n}),
+\qquad Z\sim\mathrm{Unif}(\mathbb F_2^{2n}),
 \qquad \mathbb E F=\gamma^2.
 ```
 
@@ -76,7 +76,7 @@ These statements do not create a discontinuous hardness theorem at every nonzero
 
 ```math
 \exp(O(\eta n))\,
-\operatorname{poly}(n,\gamma^{-1},\log(1/\delta)).
+\mathrm{poly}(n,\gamma^{-1},\log(1/\delta)).
 ```
 
 It is polynomial when $`\eta=O(\log n/n)`$. It is an elementary noisy-parity strategy, not a sharp threshold result. Intermediate noise scalings and the best possible runtime across all regimes remain outside the proved classification.
@@ -91,11 +91,11 @@ for every target. The entire training set is then independent of $`P`$, and sign
 
 ## 6. A limited thermal interpretation
 
-For $`0\leq\gamma<1`$, put $`\beta=\operatorname{artanh}\gamma`$. The state conditioned on a recorded label can be written
+For $`0\leq\gamma<1`$, put $`\beta=\mathrm{artanh}\gamma`$. The state conditioned on a recorded label can be written
 
 ```math
 \rho_{C,P,\gamma}
-=\frac{e^{\beta CP}}{\operatorname{Tr}(e^{\beta CP})}.
+=\frac{e^{\beta CP}}{\mathrm{Tr}(e^{\beta CP})}.
 ```
 
 This follows from $`P^2=I`$ and $`e^{\beta CP}=\cosh\beta\,I+C\sinh\beta\,P`$. Its two eigenvalues are $`(1-\eta)/2^{n-1}`$ and $`\eta/2^{n-1}`$, each with multiplicity $`2^{n-1}`$, so its entropy in bits is

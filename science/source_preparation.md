@@ -52,14 +52,14 @@ Take $`P=X\otimes Z`$ and use the first qubit as pivot. Write $`|+\rangle,|-\ran
 
 | Clean label | Equally likely preparation choices | Conditional density operator |
 |---|---|---|
-| $`Y=+1`$ | $`|+0\rangle`$, $`|-1\rangle`$ | $`(I+X\otimes Z)/4`$ |
-| $`Y=-1`$ | $`|+1\rangle`$, $`|-0\rangle`$ | $`(I-X\otimes Z)/4`$ |
+| $`Y=+1`$ | $`\lvert+0\rangle`$, $`\lvert-1\rangle`$ | $`(I+X\otimes Z)/4`$ |
+| $`Y=-1`$ | $`\lvert+1\rangle`$, $`\lvert-0\rangle`$ | $`(I-X\otimes Z)/4`$ |
 
 Each individual vector is a product state. Measuring $`X`$ on the first qubit and $`Z`$ on the second gives two signs whose product is the clean label. A learner that does not know the local axes must discover which product of local measurements carries the label.
 
 ## 2. Adding annotation noise changes no prepared vector
 
-After preparing the clean example, the source draws an independent flip bit $`e\sim\operatorname{Bernoulli}(\eta)`$ and records $`c=y\oplus e`$. Thus the quantum preparation and its latent clean class are unchanged. The state conditioned on the *recorded* sign is
+After preparing the clean example, the source draws an independent flip bit $`e\sim\mathrm{Bernoulli}(\eta)`$ and records $`c=y\oplus e`$. Thus the quantum preparation and its latent clean class are unchanged. The state conditioned on the *recorded* sign is
 
 ```math
 \begin{aligned}
@@ -85,7 +85,7 @@ Suppose two sources, for each fixed target and recorded label, prepare different
 For any allowed joint POVM $`\{F_o\}`$, both therefore give outcome probabilities
 
 ```math
-\Pr(o\mid P)=\operatorname{Tr}\!\left(F_o\tau_{P,\gamma}^{\otimes T}\right).
+\Pr(o\mid P)=\mathrm{Tr}\!\left(F_o\tau_{P,\gamma}^{\otimes T}\right).
 ```
 
 The equality also holds for arbitrary quantum channels followed by measurements, including adaptive processing and retention of a quantum model. It is simply linearity of quantum operations applied to the identical input state. An analogous statement includes the independent test specimen.

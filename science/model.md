@@ -23,7 +23,7 @@ W_{(a,b)}=i^{\nu(a,b)}X^aZ^b.
 The exponent $`\nu(a,b)`$ is an **integer sum**, before reduction modulo four in the power of $`i`$. Thus $`W_{(a,b)}`$ is the canonical tensor product of $`I,X,Y,Z`$, with no additional sign. For example, $`iXZ=Y`$. Every $`W_p`$ is Hermitian, squares to the identity, and satisfies
 
 ```math
-\operatorname{Tr}(W_pW_{p'})=d\,\mathbf 1\{p=p'\}.
+\mathrm{Tr}(W_pW_{p'})=d\,\mathbf 1\{p=p'\}.
 ```
 
 For $`p=(a,b)`$ and $`z=(a',b')`$, the bit-valued quantities used in Bell sampling are
@@ -145,7 +145,7 @@ For any fixed target and any trained quantum model, averaging over training outc
 Then its clean advantage for that target is
 
 ```math
-a_P=\frac{1}{2d}\operatorname{Tr}(A_PP).
+a_P=\frac{1}{2d}\mathrm{Tr}(A_PP).
 ```
 
 If the same prediction is compared with an independently corrupted held-out annotation, its agreement probability is
@@ -160,7 +160,7 @@ Both identities hold for arbitrary quantum memory and a decoder that consumes it
 **Proof.** Let $`\omega_P`$ be the trained state, including its classical transcript, and let $`F_+,F_-`$ be the final two-outcome POVM on the model and test register. The effective test observable can be written as
 
 ```math
-A_P=\operatorname{Tr}_{\mathrm{model}}
+A_P=\mathrm{Tr}_{\mathrm{model}}
 \left[
 (\omega_P^{1/2}\otimes I)
 (F_+-F_-)
@@ -173,11 +173,11 @@ It is Hermitian and lies between $`-I`$ and $`I`$ because the effective test eff
 ```math
 \begin{aligned}
 \Pr(\widehat Y=Y\mid P)
-&=\frac12\operatorname{Tr}
+&=\frac12\mathrm{Tr}
 \left[\frac{I+A_P}{2}\rho^0_{+,P}\right]
-+\frac12\operatorname{Tr}
++\frac12\mathrm{Tr}
 \left[\frac{I-A_P}{2}\rho^0_{-,P}\right]\\
-&=\frac12+\frac{1}{2d}\operatorname{Tr}(A_PP).
+&=\frac12+\frac{1}{2d}\mathrm{Tr}(A_PP).
 \end{aligned}
 ```
 
@@ -215,7 +215,7 @@ Bell sampling and a separate sign-learning step are established Pauli-learning m
 For two independently drawn training examples, Bell-measure their feature registers and keep the product of the recorded labels. With the Bell convention in [Bell learning](bell_learning.md#b1--the-exact-bell-correspondence), the resulting classical observation obeys
 
 ```math
-Z\sim\operatorname{Unif}(\mathbb F_2^{2n}),
+Z\sim\mathrm{Unif}(\mathbb F_2^{2n}),
 \qquad
 R=(-1)^{q(p)+[p,Z]}F,
 \qquad

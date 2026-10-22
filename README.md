@@ -58,9 +58,11 @@ The Pauli-memory separation, Bell sampling, learning-tree method, noisy-parity m
 
 ## Learning route
 
-The [30-milestone map](learning/MILESTONES.md) records the project's conceptual structure. Its first 14 milestones connect the background objects into the learning framework. Its next 16 connect the source, algorithms, statistical converses, and computational reduction into the complete resource comparison. Each milestone states an understanding target, dependencies, conceptual connection, and source pointers.
+The selected educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [learning guide](learning/README.md) connects its relevant material to this project through a [worked tutorial](learning/TUTORIAL.md), an [exact source-to-project bridge](learning/ANCHOR_BRIDGE.md), and the [30-milestone map](learning/MILESTONES.md). The bridge identifies the book sections, translates notation, and supplies the project-specific steps between quantum-information foundations and the learning result. The author's [official page](https://cs.uwaterloo.ca/~watrous/TQI/) provides an authorized prepublication manuscript.
 
-For a short first pass, read [the two-qubit source example](science/source_preparation.md#a-complete-two-qubit-example), the [Bell correspondence](science/bell_learning.md#b1--the-exact-bell-correspondence), and [the interpretation](science/interpretation.md). For a theorem-focused pass, begin with [the canonical result index](science/model.md#5-canonical-result-index).
+The map's first 14 milestones connect the background objects into the learning framework. Its next 16 connect the source, algorithms, statistical converses, and computational reduction into the complete resource comparison. Each milestone states an understanding target, dependencies, conceptual connection, and source pointers. These are project-defined targets for any reader.
+
+For a short first pass, begin with the [tutorial](learning/TUTORIAL.md), then read [the interpretation](science/interpretation.md). For a theorem-focused pass, begin with [the canonical result index](science/model.md#5-canonical-result-index). The [two-qubit source example](science/source_preparation.md#a-complete-two-qubit-example) and [exact Bell correspondence](science/bell_learning.md#b1--the-exact-bell-correspondence) provide direct entries into the constructions.
 
 An LLM or other automated reader can use [llms.txt](llms.txt) to locate authoritative statements and preserve the model's important distinctions.
 

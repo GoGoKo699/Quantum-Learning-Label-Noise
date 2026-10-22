@@ -23,7 +23,7 @@ The two identities responsible for the parity relation are
 
 ```math
 \langle\Phi_d|A\otimes B|\Phi_d\rangle
-=\frac1d\operatorname{Tr}(A^TB),
+=\frac1d\mathrm{Tr}(A^TB),
 \qquad
 W_p^T=(-1)^{q(p)}W_p.
 ```
@@ -40,7 +40,7 @@ Bell sampling of Pauli information and a subsequent sign-learning step are estab
 
 ```math
 \begin{aligned}
-Z&\sim\operatorname{Unif}(\mathbb F_2^{2n}),\\
+Z&\sim\mathrm{Unif}(\mathbb F_2^{2n}),\\
 R&=(-1)^{q(p)+[p,Z]}F,\\
 \Pr(F=-1)&=\eta_B=2\eta(1-\eta),\\
 1-2\eta_B&=(1-2\eta)^2=\gamma^2.
@@ -65,7 +65,7 @@ The terms linear in $`P`$ have zero expectation in a Bell vector because $`P`$ i
 ```math
 \begin{aligned}
 \langle\Phi_z|P\otimes P|\Phi_z\rangle
-&=\frac1d\operatorname{Tr}
+&=\frac1d\mathrm{Tr}
 \left[P^T W_z^\dagger P W_z\right]\\
 &=(-1)^{q(p)+[p,z]}.
 \end{aligned}
@@ -100,7 +100,7 @@ In bit notation, with $`r=(1-R)/2`$, Theorem B1 is
 ```math
 r=q(p)+[p,z]+\xi\pmod2,
 \qquad
-\xi\sim\operatorname{Bernoulli}(\eta_B).
+\xi\sim\mathrm{Bernoulli}(\eta_B).
 ```
 
 If ordinary dot products use the coordinate order $`z=(a_z,b_z)`$, the linear coefficient is $`(b,a)`$:
@@ -255,7 +255,7 @@ Fixed positive noise and a noise rate that decreases with dimension are differen
 
 ```math
 \exp(O(\eta n))\,
-\operatorname{poly}\!\left(n,\gamma^{-1},\ln(1/\delta)\right).
+\mathrm{poly}\!\left(n,\gamma^{-1},\ln(1/\delta)\right).
 ```
 
 In particular, both costs are polynomial when $`\eta=O(\log n/n)`$ and the requested confidence has polynomial bit complexity. This is a sufficient efficient regime, without an assertion of a sharp transition.

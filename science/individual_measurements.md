@@ -19,7 +19,7 @@ Representing the annotation by a qubit lets us consider arbitrary POVMs on label
 For distributions $`p,q`$, use total variation
 
 ```math
-\operatorname{TV}(p,q)=\frac12\int|dp-dq|.
+\mathrm{TV}(p,q)=\frac12\int|dp-dq|.
 ```
 
 ## Theorem S2
@@ -79,18 +79,18 @@ Write
 \qquad \|u\|^2+\|v\|^2=1,
 ```
 
-and set $`B=|u\rangle\langle u|-|v\rangle\langle v|`$. Then $`a_\phi(Q)=\operatorname{Tr}(BQ)`$. Unsigned Paulis, including the identity, form an orthogonal Hermitian operator basis with $`\operatorname{Tr}(QQ')=d\,\mathbf1\{Q=Q'\}`$. Hence
+and set $`B=|u\rangle\langle u|-|v\rangle\langle v|`$. Then $`a_\phi(Q)=\mathrm{Tr}(BQ)`$. Unsigned Paulis, including the identity, form an orthogonal Hermitian operator basis with $`\mathrm{Tr}(QQ')=d\,\mathbf1\{Q=Q'\}`$. Hence
 
 ```math
-\sum_{Q\ne I}\operatorname{Tr}(BQ)^2
-=d\operatorname{Tr}(B^2)-\operatorname{Tr}(B)^2.
+\sum_{Q\ne I}\mathrm{Tr}(BQ)^2
+=d\mathrm{Tr}(B^2)-\mathrm{Tr}(B)^2.
 \tag{S2.5}
 ```
 
 Put $`t=\|u\|^2-\|v\|^2\in[-1,1]`$. Directly,
 
 ```math
-\operatorname{Tr}(B^2)
+\mathrm{Tr}(B^2)
 =\|u\|^4+\|v\|^4-2|\langle u|v\rangle|^2
 \leq\frac{1+t^2}{2}.
 ```
@@ -99,7 +99,7 @@ Since $`d\geq2`$,
 
 ```math
 \begin{aligned}
-d\operatorname{Tr}(B^2)-\operatorname{Tr}(B)^2
+d\mathrm{Tr}(B^2)-\mathrm{Tr}(B)^2
 &\leq\frac d2+\left(\frac d2-1\right)t^2\\
 &\leq d-1.
 \end{aligned}
@@ -114,7 +114,7 @@ Dividing by $`d^2-1`$ proves the upper bound in (S2.4). Equality is attained by 
 Fix an integer $`m\geq0`$ and predetermined contrasts $`\gamma_1,\ldots,\gamma_m\in[0,1]`$. Let $`p`$ be the complete transcript distribution of any adaptive individual-example protocol when $`P`$ is sampled once from the signed-Pauli prior and the examples are $`\tau_P(\gamma_t)`$. Let $`q`$ be the transcript distribution of the same protocol on the null examples. Then
 
 ```math
-\operatorname{TV}(p,q)
+\mathrm{TV}(p,q)
 \leq\min\left\{1,
 5\delta_*\sum_{t=1}^m\gamma_t^2\right\}.
 \tag{S2.6}
@@ -158,7 +158,7 @@ Define
 x=\delta_*\sum_{t=1}^m\gamma_t^2.
 ```
 
-If $`x\geq1/5`$, the bound $`\operatorname{TV}(p,q)\leq1`$ proves (S2.6). Assume henceforth $`x<1/5`$.
+If $`x\geq1/5`$, the bound $`\mathrm{TV}(p,q)\leq1`$ proves (S2.6). Assume henceforth $`x<1/5`$.
 
 For the fixed transcript leaf, discard unsigned Paulis for which at least one $`|\gamma_t a_t(Q)|>1/2`$. Markov's inequality, the union bound, and (S2.4) give
 
@@ -213,7 +213,7 @@ where $`e^{-r}\geq1-r`$ for $`r\geq0`$ gives the middle inequality. This holds f
 Because $`p=Lq`$ and both laws are normalized,
 
 ```math
-\operatorname{TV}(p,q)=\mathbb E_q[(1-L)_+]
+\mathrm{TV}(p,q)=\mathbb E_q[(1-L)_+]
 \leq5x.
 ```
 
@@ -228,7 +228,7 @@ This is a valid $`T+1`$-example individual protocol. Once training has ended, it
 In the target experiment, the event has probability $`1/2+a`$ by the assumed expected clean advantage. In the null experiment, the final annotation is an independent balanced bit, independent of both the test feature and the entire training transcript. Its agreement probability is exactly $`1/2`$. An event-probability difference cannot exceed total variation. Applying (S2.6) with contrasts $`\gamma,\ldots,\gamma,1`$ therefore yields
 
 ```math
-a\leq\operatorname{TV}(p,q)
+a\leq\mathrm{TV}(p,q)
 \leq\min\left\{1,
 5\delta_*(T\gamma^2+1)\right\}.
 ```

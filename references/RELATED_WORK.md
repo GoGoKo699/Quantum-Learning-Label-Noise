@@ -124,7 +124,7 @@ This attribution map describes the claims proved in the accompanying chapters. I
 
 ```math
 U\rho_{C,P,\gamma}U^\dagger=\frac{I+C\gamma Z}{2}\otimes\left(\frac I2\right)^{\otimes(n-1)},
-\qquad \operatorname{tr}(\rho_{C,P,\gamma}^2)=\frac{1+\gamma^2}{2^n}.
+\qquad \mathrm{tr}(\rho_{C,P,\gamma}^2)=\frac{1+\gamma^2}{2^n}.
 ```
 
 Thus it contains many maximally mixed factors, and retaining a constant absolute amount of purity is not the classification guarantee required here. There is also a direct noise-strength check: if this state were a Pauli-noisy image of a pure target with total error probability $`\lambda`$, positivity of the no-error contribution would imply $`1-\lambda\leq\lambda_{\max}(\rho)=(1+\gamma)/2^n`$. Its required total error probability is therefore close to one. This comparison checks the source promises; it does not assert that the cited algorithms fail on every mixed input.
