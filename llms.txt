@@ -15,11 +15,21 @@
 
 ## Learning and verification
 
+- [Learning guide](learning/README.md): entrypoint for the single selected anchor, Watrous's The Theory of Quantum Information (2018), and the connected study route.
+- [Tutorial](learning/TUTORIAL.md): concrete examples and explanations from product-state preparation through Bell learning to the sample, memory, and time separation.
+- [Anchor bridge](learning/ANCHOR_BRIDGE.md): exact Watrous sections, notation translation, milestone mapping, and locally supplied derivations. The authorized online source is a prepublication manuscript; it is linked, not redistributed.
 - [Milestones](learning/MILESTONES.md): exactly 30 project-defined understanding targets; 14 background/preliminaries and 16 narrative/innovation milestones. This is a common scientific map, not a learner assessment record.
 - [Verification](verification/README.md): reproducible small-matrix and structural checks, commands, tolerances, and limits.
 - [Recorded results](verification/verified_results.json): actual output of the deterministic verification suite in the documented environment.
 - [Related work](references/RELATED_WORK.md): primary sources, exact version/section comparisons, inherited ingredients, and nearby learning interfaces.
 - [Bibliography](references/references.bib): bibliographic records for the cited research.
+
+## Routes by reader intention
+
+- Story: learning/TUTORIAL.md, then science/interpretation.md; follow canonical proof links when an argument needs more detail.
+- Study: learning/README.md and learning/ANCHOR_BRIDGE.md alongside learning/MILESTONES.md. Use only the selected Watrous anchor; other cited papers are research dependencies and attribution.
+- Theorems: science/model.md gives the exact common assumptions and K1/B1/S1/S2/H1 index; follow each result to its one authoritative proof chapter.
+- Reproduction: verification/README.md, then python verification/run_all.py from the repository root; compare pass criteria and coverage with verification/verified_results.json, not exact floating-point bytes across platforms.
 
 ## Scope distinctions to preserve
 

@@ -23,18 +23,22 @@ For an integer $`T\geq0`$, let $`a_T^*`$ be the largest expected clean-test adva
 For $`n\geq1`$, $`0<\gamma\leq1`$, and an integer $`T\geq1`$,
 
 ```math
+\begin{aligned}
 a_T^*\leq
 \min\left\{\frac12,
 \frac12\sqrt{\frac{(1+\gamma^2)^T-(1-\gamma^2)^T}{M}}\right\}.
+\end{aligned}
 \tag{S1.1}
 ```
 
 For $`T=0`$, $`a_0^*=0`$. Consequently, any learner attaining a prescribed advantage $`a\in(0,1/2)`$ must use
 
 ```math
+\begin{aligned}
 T\geq
 \max\left\{1,
 \left\lceil\frac{\ln(4a^2M)}{\ln(1+\gamma^2)}\right\rceil\right\}.
+\end{aligned}
 \tag{S1.2}
 ```
 
@@ -43,17 +47,21 @@ The logarithmic bound can be weak for small $`n`$ and small $`a`$; equation (S1.
 Conversely, for every $`\delta\in(0,1)`$, a collective pretty-good measurement identifies the signed target with average error at most $`\delta`$ whenever
 
 ```math
+\begin{aligned}
 T\geq
 \left\lceil\frac{4}{\gamma^2}
 \ln\frac{M-1}{\delta}\right\rceil.
+\end{aligned}
 \tag{S1.3}
 ```
 
 On successful identification, measuring $`P`$ on the fresh test predicts its clean label perfectly. Choosing $`\delta=1/2-a`$ therefore gives clean-test advantage at least $`a`$. For each fixed $`a\in(0,1/2)`$, the optimal training-example complexity is
 
 ```math
+\begin{aligned}
 T_{\mathrm{coh}}(n,\gamma,a)=\Theta_a\!\left(\frac{n}{\gamma^2}\right)
 \qquad(n\longrightarrow\infty),
+\end{aligned}
 \tag{S1.4}
 ```
 
@@ -79,15 +87,19 @@ Every procedure that trains a model and later produces one prediction is a binar
 Define the Hermitian operator
 
 ```math
+\begin{aligned}
 X_T=\frac1M\sum_P\tau_P^{\otimes T}\otimes\frac{P}{d}.
+\end{aligned}
 \tag{S1.5}
 ```
 
 Then $`\Omega_+-\Omega_-=2X_T`$. Equal-prior binary state discrimination gives
 
 ```math
+\begin{aligned}
 a_T^*=\frac14\|\Omega_+-\Omega_-\|_1
 =\frac12\|X_T\|_1.
+\end{aligned}
 \tag{S1.6}
 ```
 
@@ -102,7 +114,7 @@ For $`T=0`$, the independent sign symmetry gives $`X_0=\mathbb E_P[P]/d=0`$, pro
 The Pauli trace identities imply
 
 ```math
-\operatorname{Tr}(PQ)=
+\mathrm{Tr}(PQ)=
 \begin{cases}
 d,&Q=P,\\
 -d,&Q=-P,\\
@@ -113,19 +125,19 @@ d,&Q=P,\\
 The corresponding one-example overlaps are
 
 ```math
-\operatorname{Tr}(\tau_P^2)=\frac{1+\gamma^2}{D},
+\mathrm{Tr}(\tau_P^2)=\frac{1+\gamma^2}{D},
 \qquad
-\operatorname{Tr}(\tau_P\tau_{-P})=\frac{1-\gamma^2}{D}.
+\mathrm{Tr}(\tau_P\tau_{-P})=\frac{1-\gamma^2}{D}.
 ```
 
 Using multiplicativity of the trace under tensor products in (S1.5),
 
 ```math
 \begin{aligned}
-\operatorname{Tr}(X_T^2)
+\mathrm{Tr}(X_T^2)
 &=\frac1{M^2}\sum_{P,Q}
-\bigl[\operatorname{Tr}(\tau_P\tau_Q)\bigr]^T
-\frac{\operatorname{Tr}(PQ)}{d^2}\\
+\bigl[\mathrm{Tr}(\tau_P\tau_Q)\bigr]^T
+\frac{\mathrm{Tr}(PQ)}{d^2}\\
 &=\frac1{dM}\left[
 \left(\frac{1+\gamma^2}{D}\right)^T
 -\left(\frac{1-\gamma^2}{D}\right)^T\right]\\
@@ -139,7 +151,7 @@ This is an exact identity for $`T\geq1`$, including $`\gamma=1`$. At $`T=0`$, it
 The operator $`X_T`$ acts in dimension $`dD^T`$. Cauchy–Schwarz for its singular values gives
 
 ```math
-\|X_T\|_1^2\leq dD^T\operatorname{Tr}(X_T^2).
+\|X_T\|_1^2\leq dD^T\mathrm{Tr}(X_T^2).
 ```
 
 Combining this with (S1.6) and (S1.7) proves (S1.1). In particular, $`a_T^*\geq a`$ implies
@@ -173,7 +185,7 @@ To prove these formulas, set $`A=Z_C\otimes P`$ and $`B=Z_C\otimes Q`$. They are
 
 If $`Q=-P`$, then $`B=-A`$. The states commute and the product of their square roots is $`\sqrt{1-\gamma^2}\,I/D`$, giving the first row.
 
-If $`P,Q`$ commute and $`Q\ne\pm P`$, then $`A,B`$ commute and $`\operatorname{Tr}(A)=\operatorname{Tr}(B)=\operatorname{Tr}(AB)=0`$. Each joint eigenspace, with eigenvalues $`u,v\in\{\pm1\}`$, has dimension $`D/4`$. Consequently,
+If $`P,Q`$ commute and $`Q\ne\pm P`$, then $`A,B`$ commute and $`\mathrm{Tr}(A)=\mathrm{Tr}(B)=\mathrm{Tr}(AB)=0`$. Each joint eigenspace, with eigenvalues $`u,v\in\{\pm1\}`$, has dimension $`D/4`$. Consequently,
 
 ```math
 \begin{aligned}
@@ -190,15 +202,17 @@ For $`n=1`$, distinct unsigned nonidentity Paulis anticommute, so this commuting
 If $`P,Q`$ anticommute, then $`A,B`$ generate a qubit algebra with a maximally mixed multiplicity space. Their two reduced qubit states have perpendicular Bloch vectors of length $`\gamma`$. For qubit states $`r,s`$,
 
 ```math
-f(r,s)^2=\operatorname{Tr}(rs)+2\sqrt{\det(r)\det(s)}.
+f(r,s)^2=\mathrm{Tr}(rs)+2\sqrt{\det(r)\det(s)}.
 ```
 
-Here $`\operatorname{Tr}(rs)=1/2`$ and $`\det(r)=\det(s)=(1-\gamma^2)/4`$. Thus $`f^2=1-\gamma^2/2`$, and adjoining an identical maximally mixed multiplicity factor does not change fidelity.
+Here $`\mathrm{Tr}(rs)=1/2`$ and $`\det(r)=\det(s)=(1-\gamma^2)/4`$. Thus $`f^2=1-\gamma^2/2`$, and adjoining an identical maximally mixed multiplicity factor does not change fidelity.
 
 The largest of the three values is
 
 ```math
+\begin{aligned}
 f_{\max}=\sqrt{1-\gamma^2/2}.
+\end{aligned}
 \tag{S1.8}
 ```
 
@@ -216,7 +230,9 @@ A_P=\frac1M\tau_P^{\otimes T},
 On the support of $`G`$, the pretty-good measurement has effects
 
 ```math
+\begin{aligned}
 E_P=G^{-1/2}A_PG^{-1/2},
+\end{aligned}
 \tag{S1.9}
 ```
 
@@ -225,10 +241,12 @@ where the inverse is restricted to the support. Any positive completion on the k
 The standard mixed-state PGM bound gives
 
 ```math
+\begin{aligned}
 P_{\mathrm{err}}^{\mathrm{PGM}}
 \leq\sum_{P\ne Q}\sqrt{p_Pp_Q}\,
 f(\tau_P^{\otimes T},\tau_Q^{\otimes T}),
 \qquad p_P=\frac1M.
+\end{aligned}
 \tag{S1.10}
 ```
 

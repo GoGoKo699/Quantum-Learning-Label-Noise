@@ -8,15 +8,54 @@
   "scope": "Finite numerical and documentation checks; analytic proofs are in science/.",
   "suites": {
     "repository": {
-      "documents_checked": 13,
-      "heading_fragments_checked": 142,
+      "dependency_references_checked": 88,
+      "documents_checked": 16,
+      "duplicate_explicit_anchors": 0,
+      "explicit_anchors_checked": 78,
+      "heading_fragments_checked": 269,
+      "inline_math_expressions_checked": 912,
+      "learning_navigation": {
+        "README.md": [
+          "learning/README.md",
+          "learning/ANCHOR_BRIDGE.md",
+          "learning/TUTORIAL.md",
+          "learning/MILESTONES.md"
+        ],
+        "learning/README.md": [
+          "learning/README.md",
+          "learning/ANCHOR_BRIDGE.md",
+          "learning/TUTORIAL.md",
+          "learning/MILESTONES.md"
+        ],
+        "llms.txt": [
+          "learning/README.md",
+          "learning/ANCHOR_BRIDGE.md",
+          "learning/TUTORIAL.md",
+          "learning/MILESTONES.md"
+        ]
+      },
       "milestone_count": 30,
       "milestone_ids_in_order": true,
-      "relative_links_checked": 280,
-      "scope": "Local links and plain-text heading slugs; not a hosted-rendering test.",
+      "milestone_phase_membership": {
+        "I": 14,
+        "II": 16
+      },
+      "passed": true,
+      "relative_links_checked": 466,
+      "required_fields_per_milestone": [
+        "Central question",
+        "Understanding target",
+        "Dependencies and story role",
+        "Conceptual connection",
+        "Source pointers"
+      ],
+      "scope": "Learning-map requirements, local links and plain-text heading slugs, explicit anchors, and math delimiters; not a hosted-rendering or semantic proof test.",
+      "selected_educational_anchor": "watrous2018",
       "status": "passed",
       "unclosed_fences": 0,
-      "unexpected_control_characters": 0
+      "unescaped_table_math_pipes": 0,
+      "unexpected_control_characters": 0,
+      "unsupported_math_macros": 0
     },
     "source_bell_reduction": {
       "absolute_tolerance": 2e-10,

@@ -8,16 +8,16 @@ The reduction tests the learner through one fresh prediction. It therefore appli
 
 Fix a constant $`\eta\in(0,1/2)`$. In dimension $`k`$, consider two classical sampling experiments.
 
-**LPN experiment.** Draw one hidden secret $`S\sim\operatorname{Unif}(\mathbb F_2^k)`$. Each sample is
+**LPN experiment.** Draw one hidden secret $`S\sim\mathrm{Unif}(\mathbb F_2^k)`$. Each sample is
 
 ```math
 (X,B),
 \qquad
-X\sim\operatorname{Unif}(\mathbb F_2^k),
+X\sim\mathrm{Unif}(\mathbb F_2^k),
 \qquad
 B=S\cdot X+e\pmod2,
 \qquad
-e\sim\operatorname{Bernoulli}(\eta).
+e\sim\mathrm{Bernoulli}(\eta).
 ```
 
 The covariates and noise bits are independent across samples, conditioned on $`S`$.
@@ -27,7 +27,7 @@ The covariates and noise bits are independent across samples, conditioned on $`S
 A distinguisher receives polynomially many such **classical** samples and may process them with a quantum computer. Its distinguishing advantage is
 
 ```math
-\operatorname{Adv}_{\mathrm{LPN}}(D;k,\eta)
+\mathrm{Adv}_{\mathrm{LPN}}(D;k,\eta)
 =\left|
 \Pr(D\text{ accepts in the LPN experiment})
 -\Pr(D\text{ accepts in the uniform experiment})
@@ -202,7 +202,7 @@ Thus the reduction establishes hardness for the source specified in the model, i
 
 | Direction | Input | Output | Noise relation | What is preserved |
 |---|---|---|---|---|
-| H1 simulation | Classical LPN in dimension $`k`$ | Quantum supervised learning on $`n=k+1`$ qubits | Same $`\eta`$ | Any efficient clean predictor gives a distinguisher with gap $`\gamma|a|`$ |
+| H1 simulation | Classical LPN in dimension $`k`$ | Quantum supervised learning on $`n=k+1`$ qubits | Same $`\eta`$ | Any efficient clean predictor gives a distinguisher with gap $`\gamma\lvert a\rvert`$ |
 | B1 Bell sensing | Quantum supervised learning on $`n`$ qubits | Classical affine noisy parity in dimension $`2n`$ | $`\eta_B=2\eta(1-\eta)`$ | An appropriate parity solver recovers the unsigned target; fresh calibration recovers its sign |
 
 The first direction is the all-learner lower-bound reduction. The second supplies algorithms through a particular measurement and proves an exact data correspondence. Treating the Bell transcript as noisy parity alone would only show a barrier for decoders of that transcript; it would not rule out a different coherent quantum learner. H1 supplies that missing quantifier.

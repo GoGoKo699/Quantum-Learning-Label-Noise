@@ -21,7 +21,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A parity is simultaneously a linear equation over $`\mathbb F_2`$ and a product of signs. That translation connects binary linear algebra to quantum measurement outcomes.
 
-**Source pointers.** [Model: Pauli conventions and corrupted annotations](../science/model.md); [Bell learning: B1](../science/bell_learning.md); [Computational hardness: decision-LPN definition](../science/computational_hardness.md).
+**Source pointers.** [Model: Pauli conventions and corrupted annotations](../science/model.md); [Bell learning: B1](../science/bell_learning.md); [Computational hardness: decision-LPN definition](../science/computational_hardness.md). Selected anchor: [Watrous §1.2.2; the parity identities are supplied locally](ANCHOR_BRIDGE.md#m01).
 
 <a id="m02"></a>
 ### M02 — Pauli operators and their binary coordinates
@@ -34,7 +34,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Operator multiplication and commutation can be tracked through finite-field geometry, while the global sign still carries the orientation of a classifier's labels.
 
-**Source pointers.** [Model: §1](../science/model.md); [Bell learning: Bell basis and phase conventions](../science/bell_learning.md).
+**Source pointers.** [Model: §1](../science/model.md); [Bell learning: Bell basis and phase conventions](../science/bell_learning.md). Selected anchor: [Watrous §§1.1.2–1.1.3; the Pauli coordinate conventions are supplied locally](ANCHOR_BRIDGE.md#m02).
 
 <a id="m03"></a>
 ### M03 — Pure preparations, mixtures, and independent specimens
@@ -47,7 +47,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Classical uncertainty in preparation can make the accessible state mixed even when every realized specimen is pure and unentangled.
 
-**Source pointers.** [Source preparation: §§1–3](../science/source_preparation.md); [Model: clean specimens and access](../science/model.md).
+**Source pointers.** [Source preparation: §§1–3](../science/source_preparation.md); [Model: clean specimens and access](../science/model.md). Selected anchor: [Watrous §§2.1.2–2.1.3](ANCHOR_BRIDGE.md#m03).
 
 <a id="m04"></a>
 ### M04 — Measurements, channels, and retained quantum information
@@ -60,7 +60,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A classical transcript records the result of a measurement choice; retaining a quantum system preserves access to other joint measurements that were not made at acquisition time.
 
-**Source pointers.** [Model: access and resource accounting](../science/model.md); [Individual measurements: definitions and allowed protocols](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021).
+**Source pointers.** [Model: access and resource accounting](../science/model.md); [Individual measurements: definitions and allowed protocols](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021). Selected anchor: [Watrous §§2.2.1–2.2.2 and 2.3.1–2.3.2](ANCHOR_BRIDGE.md#m04).
 
 <a id="m05"></a>
 ### M05 — Prediction risk, target identification, and averaging
@@ -73,7 +73,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A trained quantum state can function as a consumable prediction program. Its performance is meaningful even when no classical hypothesis is extracted from it.
 
-**Source pointers.** [Model: prediction and identification; single-test identity](../science/model.md); [Collective statistics: binary state-test formulation](../science/collective_statistics.md).
+**Source pointers.** [Model: prediction and identification; single-test identity](../science/model.md); [Collective statistics: binary state-test formulation](../science/collective_statistics.md). Selected anchor: [Watrous §§3.1.1–3.1.2; the supervised objective is fixed locally](ANCHOR_BRIDGE.md#m05).
 
 <a id="m06"></a>
 ### M06 — Classical annotations inside a quantum statistical model
@@ -86,7 +86,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Annotation corruption can leave the population-optimal clean classifier unchanged while weakening the information available to discover it.
 
-**Source pointers.** [Model: corrupted annotations and single-test identity](../science/model.md); [Interpretation: label noise and population risk](../science/interpretation.md).
+**Source pointers.** [Model: corrupted annotations and single-test identity](../science/model.md); [Interpretation: label noise and population risk](../science/interpretation.md). Selected anchor: [Watrous §§2.1.1–2.1.2, 2.2.1, and 2.3.1](ANCHOR_BRIDGE.md#m06).
 
 <a id="m07"></a>
 ### M07 — Clifford transformations and hidden measurement bases
@@ -99,20 +99,20 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Random basis changes preserve the structure that makes a reduction possible while making the resulting learning distribution match the target prior.
 
-**Source pointers.** [Computational hardness: randomizing the target](../science/computational_hardness.md); [Koenig–Smolin2014](../references/RELATED_WORK.md#ks2014).
+**Source pointers.** [Computational hardness: randomizing the target](../science/computational_hardness.md); [Koenig–Smolin2014](../references/RELATED_WORK.md#ks2014). Selected anchor: [Watrous §1.1.2 and §§2.2.1–2.2.2; Clifford randomization is supplied locally](ANCHOR_BRIDGE.md#m07).
 
 <a id="m08"></a>
 ### M08 — Bell measurements as measurements of correlations
 
 **Central question.** What does a joint Bell measurement reveal that a predetermined single-specimen basis need not reveal?
 
-**Understanding target.** Interpret the maximally entangled Bell basis and the identity $`\langle\Phi_d|A\otimes B|\Phi_d\rangle=\operatorname{Tr}(A^TB)/d`$. Explain how the transpose sign of a Pauli enters the outcome relation and why the Bell circuit acts across two independently supplied feature registers.
+**Understanding target.** Interpret the maximally entangled Bell basis and the identity $`\langle\Phi_d|A\otimes B|\Phi_d\rangle=\mathrm{Tr}(A^TB)/d`$. Explain how the transpose sign of a Pauli enters the outcome relation and why the Bell circuit acts across two independently supplied feature registers.
 
 **Dependencies and story role.** Uses [M02](#m02)–[M04](#m04). This introduces the concrete coherent measurement that will make the clean algorithm efficient.
 
 **Conceptual connection.** Entanglement can be a property of a measurement on independently prepared data, even when it is absent from every source specimen.
 
-**Source pointers.** [Bell learning: Bell basis and phase conventions](../science/bell_learning.md); [HKP2021, Appendix E.2](../references/RELATED_WORK.md#hkp2021).
+**Source pointers.** [Bell learning: Bell basis and phase conventions](../science/bell_learning.md); [HKP2021, Appendix E.2](../references/RELATED_WORK.md#hkp2021). Selected anchor: [Watrous §1.1.2, §§2.1.2–2.1.3, and §§2.3.1–2.3.2; the Bell calculation is supplied locally](ANCHOR_BRIDGE.md#m08).
 
 <a id="m09"></a>
 ### M09 — Random linear equations and reliable empirical correlations
@@ -125,7 +125,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A small number of observations can identify one of exponentially many candidates statistically, even when evaluating those candidates individually takes exponential time.
 
-**Source pointers.** [Bell learning: K1, noisy statistical decoder, and clean-batch algorithm](../science/bell_learning.md).
+**Source pointers.** [Bell learning: K1, noisy statistical decoder, and clean-batch algorithm](../science/bell_learning.md). Selected anchor: [Watrous §1.2.2, including Theorem 1.16; finite-field rank is handled locally](ANCHOR_BRIDGE.md#m09).
 
 <a id="m10"></a>
 ### M10 — Adaptive transcripts and statistical distinguishability
@@ -138,7 +138,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Adaptivity changes the tree's branches but does not remove the possibility of a pointwise bound that holds at every leaf.
 
-**Source pointers.** [Individual measurements: transcript comparison and likelihood refinement](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021).
+**Source pointers.** [Individual measurements: transcript comparison and likelihood refinement](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021). Selected anchor: [Watrous §1.2.2, §2.3.1, and §3.1.1; the adaptive tree is supplied locally](ANCHOR_BRIDGE.md#m10).
 
 <a id="m11"></a>
 ### M11 — Quantum distinguishability and prediction operators
@@ -151,7 +151,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Prediction with an arbitrary trained quantum model can be studied as one state-discrimination problem on all training inputs and the fresh test register.
 
-**Source pointers.** [Collective statistics: §§1–3](../science/collective_statistics.md); [Cheng et al.](../references/RELATED_WORK.md#cheng2024).
+**Source pointers.** [Collective statistics: §§1–3](../science/collective_statistics.md); [Cheng et al.](../references/RELATED_WORK.md#cheng2024). Selected anchor: [Watrous §1.1.3, §3.1.1, and §§3.2–3.2.1](ANCHOR_BRIDGE.md#m11).
 
 <a id="m12"></a>
 ### M12 — Many-hypothesis discrimination and the pretty-good measurement
@@ -164,7 +164,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A measurement-existence argument resolves data sufficiency while leaving the computation required to use that data open.
 
-**Source pointers.** [Collective statistics: collective PGM](../science/collective_statistics.md); [Barnum–Knill2002](../references/RELATED_WORK.md#barnum-knill2002); [Cheng et al., Appendix J](../references/RELATED_WORK.md#cheng2024).
+**Source pointers.** [Collective statistics: collective PGM](../science/collective_statistics.md); [Barnum–Knill2002](../references/RELATED_WORK.md#barnum-knill2002); [Cheng et al., Appendix J](../references/RELATED_WORK.md#cheng2024). Selected anchor: [Watrous §3.1.2 and §3.2.1; the precise pairwise-error theorem is a research citation](ANCHOR_BRIDGE.md#m12).
 
 <a id="m13"></a>
 ### M13 — Classical LPN and quantum computational reductions
@@ -177,7 +177,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Efficient quantum preparation of states from classical samples does not turn the input into a coherent example oracle. Reductions must account for the given access interface.
 
-**Source pointers.** [Computational hardness: assumption and theorem H1](../science/computational_hardness.md); [GL2022](../references/RELATED_WORK.md#gl2022); [Cross–Smith–Smolin2015](../references/RELATED_WORK.md#css2015).
+**Source pointers.** [Computational hardness: assumption and theorem H1](../science/computational_hardness.md); [GL2022](../references/RELATED_WORK.md#gl2022); [Cross–Smith–Smolin2015](../references/RELATED_WORK.md#css2015). Selected anchor: [Watrous §1.2.2 and §§2.2.1–2.2.2 for foundations; the LPN model and assumption are supplied locally](ANCHOR_BRIDGE.md#m13).
 
 <a id="m14"></a>
 ### M14 — A complete framework for quantum learning resources
@@ -190,7 +190,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Sample advantage, computational advantage, and ease of using an already learned model are different properties of the same learning task.
 
-**Source pointers.** [Model: access, result index, and resource comparison](../science/model.md); [Interpretation: one task, three resource questions](../science/interpretation.md); [Related work: operational comparisons](../references/RELATED_WORK.md).
+**Source pointers.** [Model: access, result index, and resource comparison](../science/model.md); [Interpretation: one task, three resource questions](../science/interpretation.md); [Related work: operational comparisons](../references/RELATED_WORK.md). Selected anchor: [Watrous §§2.1–2.3 and §3.1; the resource comparison is assembled locally](ANCHOR_BRIDGE.md#m14).
 
 ## Phase II — Narrative and innovation
 
@@ -205,7 +205,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The experiment changes the reliability of training annotations while preserving both the target measurement and the achievable clean test error.
 
-**Source pointers.** [Model: §§1–4 and canonical result index](../science/model.md).
+**Source pointers.** [Model: §§1–4 and canonical result index](../science/model.md). Selected anchor: [Watrous §2.1.2 and §2.3.1](ANCHOR_BRIDGE.md#m15).
 
 <a id="m16"></a>
 ### M16 — Preparing every specimen as a product state
@@ -218,7 +218,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The data can be inexpensive pure product preparations while the learner still benefits from coherent measurements across independent specimens. Ensemble equivalence will later connect this implementation to the hardness reduction.
 
-**Source pointers.** [Source preparation: parity-conditioned ensemble and two-qubit example](../science/source_preparation.md); [Model: source access](../science/model.md).
+**Source pointers.** [Source preparation: parity-conditioned ensemble and two-qubit example](../science/source_preparation.md); [Model: source access](../science/model.md). Selected anchor: [Watrous §§1.1.2–1.1.3 and §2.1.2; the preparation construction is supplied locally](ANCHOR_BRIDGE.md#m16).
 
 <a id="m17"></a>
 ### M17 — What conditioning on a noisy annotation does
@@ -231,7 +231,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The mixedness of an observer's conditional state can increase because an annotation becomes unreliable, without any physical noise being applied to the specimen.
 
-**Source pointers.** [Model: clean specimens and corrupted annotations](../science/model.md); [Source preparation: adding annotation noise](../science/source_preparation.md); [Interpretation: population risk and thermal representation](../science/interpretation.md).
+**Source pointers.** [Model: clean specimens and corrupted annotations](../science/model.md); [Source preparation: adding annotation noise](../science/source_preparation.md); [Interpretation: population risk and thermal representation](../science/interpretation.md). Selected anchor: [Watrous §1.2.2, §2.1.2, and §2.2.1](ANCHOR_BRIDGE.md#m17).
 
 <a id="m18"></a>
 ### M18 — Exact Bell conversion to affine noisy parity
@@ -244,7 +244,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A coherent two-specimen measurement reveals a linear relation without requiring the learner to know the target's single-specimen basis in advance.
 
-**Source pointers.** [Bell learning: theorem B1 and proof](../science/bell_learning.md); [HKP2021](../references/RELATED_WORK.md#hkp2021).
+**Source pointers.** [Bell learning: theorem B1 and proof](../science/bell_learning.md); [HKP2021](../references/RELATED_WORK.md#hkp2021). Selected anchor: [Watrous §1.1.2 and §2.3.1; B1 is derived locally](ANCHOR_BRIDGE.md#m18).
 
 <a id="m19"></a>
 ### M19 — Efficient recovery with correct annotations
@@ -257,7 +257,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The training procedure uses coherent measurements, but the learned description and its later use can be elementary and classical except for local test measurements.
 
-**Source pointers.** [Bell learning: theorem K1](../science/bell_learning.md); [Source preparation: prediction after the target is known](../science/source_preparation.md).
+**Source pointers.** [Bell learning: theorem K1](../science/bell_learning.md); [Source preparation: prediction after the target is known](../science/source_preparation.md). Selected anchor: [Watrous §1.2.2 and §2.3.1; the recovery algorithm and costs are supplied locally](ANCHOR_BRIDGE.md#m19).
 
 <a id="m20"></a>
 ### M20 — Statistical learnability with exhaustive noisy decoding
@@ -270,7 +270,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Weak correlation can be detected from enough data while locating which of exponentially many directions carries it remains expensive.
 
-**Source pointers.** [Bell learning: noisy statistical decoder](../science/bell_learning.md); [CGY2024](../references/RELATED_WORK.md#cgy2024).
+**Source pointers.** [Bell learning: noisy statistical decoder](../science/bell_learning.md); [CGY2024](../references/RELATED_WORK.md#cgy2024). Selected anchor: [Watrous §1.2.2, including Theorem 1.16](ANCHOR_BRIDGE.md#m20).
 
 <a id="m21"></a>
 ### M21 — An efficient regime for vanishing annotation noise
@@ -283,7 +283,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A fixed positive noise assumption does not imply hardness for every nonzero noise sequence; algorithmic behavior depends on how noise scales with dimension.
 
-**Source pointers.** [Bell learning: clean-batch proposition and proof](../science/bell_learning.md); [Interpretation: noise regimes and limits](../science/interpretation.md).
+**Source pointers.** [Bell learning: clean-batch proposition and proof](../science/bell_learning.md); [Interpretation: noise regimes and limits](../science/interpretation.md). Selected anchor: [Watrous §1.2.2; the clean-batch construction and runtime bound are supplied locally](ANCHOR_BRIDGE.md#m21).
 
 <a id="m22"></a>
 ### M22 — The exact information moment of one example
@@ -296,7 +296,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** An average over exponentially many unknown Pauli directions limits the information aligned with any single measurement vector.
 
-**Source pointers.** [Individual measurements: exact Pauli second moment](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021).
+**Source pointers.** [Individual measurements: exact Pauli second moment](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021). Selected anchor: [Watrous §§1.1.2–1.1.3, §2.1.2, and §2.3.1; the exact Pauli moment is derived locally](ANCHOR_BRIDGE.md#m22).
 
 <a id="m23"></a>
 ### M23 — From the local moment to an adaptive transcript bound
@@ -309,7 +309,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Sign symmetry removes the first-order likelihood effect, while clipping controls logarithmic endpoints without excluding clean examples.
 
-**Source pointers.** [Individual measurements: heterogeneous-contrast transcript lemma and proof](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021).
+**Source pointers.** [Individual measurements: heterogeneous-contrast transcript lemma and proof](../science/individual_measurements.md); [CCHL2021](../references/RELATED_WORK.md#cchl2021). Selected anchor: [Watrous §1.1.3, §§1.2.1–1.2.2, and §2.3.1; the adaptive converse is proved locally](ANCHOR_BRIDGE.md#m23).
 
 <a id="m24"></a>
 ### M24 — The individual-example prediction lower bound
@@ -322,7 +322,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The converse tests prediction directly, rather than requiring the learner to identify the target. Its analytical clean held-out label is distinct from the noisy label available to the later computational reduction.
 
-**Source pointers.** [Individual measurements: theorem S2 and clean-prediction reduction](../science/individual_measurements.md); [Model: prediction criterion](../science/model.md).
+**Source pointers.** [Individual measurements: theorem S2 and clean-prediction reduction](../science/individual_measurements.md); [Model: prediction criterion](../science/model.md). Selected anchor: [Watrous §3.1.1; the clean held-out reduction is supplied locally](ANCHOR_BRIDGE.md#m24).
 
 <a id="m25"></a>
 ### M25 — The best coherent predictor as one binary measurement
@@ -335,20 +335,20 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A learning problem with a quantum deployment input can be recast as state discrimination without imposing a classical or reusable learned model.
 
-**Source pointers.** [Collective statistics: reduction of prediction to a binary state test](../science/collective_statistics.md); [Model: single-test identity](../science/model.md).
+**Source pointers.** [Collective statistics: reduction of prediction to a binary state test](../science/collective_statistics.md); [Model: single-test identity](../science/model.md). Selected anchor: [Watrous §§2.2.1–2.2.2, §§2.3.1–2.3.2, and §3.1.1, Theorem 3.4](ANCHOR_BRIDGE.md#m25).
 
 <a id="m26"></a>
 ### M26 — A direct collective prediction converse
 
 **Central question.** Why does arbitrary coherent processing still require order $`n/\gamma^2`$ examples for a fixed prediction advantage?
 
-**Understanding target.** Explain why Pauli orthogonality removes all terms in the second moment except equal and opposite targets. Follow the exact expression for $`\operatorname{Tr}(X_T^2)`$ and the dimension-dependent trace-norm inequality. Distinguish the exact Hilbert–Schmidt identity from the resulting finite-sample bound on optimal advantage.
+**Understanding target.** Explain why Pauli orthogonality removes all terms in the second moment except equal and opposite targets. Follow the exact expression for $`\mathrm{Tr}(X_T^2)`$ and the dimension-dependent trace-norm inequality. Distinguish the exact Hilbert–Schmidt identity from the resulting finite-sample bound on optimal advantage.
 
 **Dependencies and story role.** Uses [M02](#m02), [M11](#m11), and [M25](#m25). This proves the lower half of S1 directly for prediction.
 
 **Conceptual connection.** The target's independent sign both makes prediction impossible without training and produces the subtraction between equal-target and opposite-target contributions in the second moment.
 
-**Source pointers.** [Collective statistics: exact second moment and prediction converse](../science/collective_statistics.md); [Model: S1](../science/model.md).
+**Source pointers.** [Collective statistics: exact second moment and prediction converse](../science/collective_statistics.md); [Model: S1](../science/model.md). Selected anchor: [Watrous §§1.1.2–1.1.3 and §3.1.1; the exact second moment is derived locally](ANCHOR_BRIDGE.md#m26).
 
 <a id="m27"></a>
 ### M27 — Matching collective achievability by identification
@@ -361,7 +361,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** A prediction converse and an identification construction can match in sample order even though their finite-sample success criteria differ.
 
-**Source pointers.** [Collective statistics: pairwise fidelities and PGM upper bound](../science/collective_statistics.md); [Cheng et al., Appendix J](../references/RELATED_WORK.md#cheng2024); [Barnum–Knill2002](../references/RELATED_WORK.md#barnum-knill2002).
+**Source pointers.** [Collective statistics: pairwise fidelities and PGM upper bound](../science/collective_statistics.md); [Cheng et al., Appendix J](../references/RELATED_WORK.md#cheng2024); [Barnum–Knill2002](../references/RELATED_WORK.md#barnum-knill2002). Selected anchor: [Watrous §3.1.2 and §§3.2–3.2.1; the pairwise-error theorem remains separately cited](ANCHOR_BRIDGE.md#m27).
 
 <a id="m28"></a>
 ### M28 — Exact simulation of the noisy source from classical LPN
@@ -374,7 +374,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Hidden-variable reasoning establishes independence and label-noise structure even though the reduction never learns those hidden variables. Ensemble equivalence transfers the result to the pure product source.
 
-**Source pointers.** [Computational hardness: H1 simulation, steps 1–3](../science/computational_hardness.md); [Source preparation: operational ensemble equivalence](../science/source_preparation.md); [Koenig–Smolin2014](../references/RELATED_WORK.md#ks2014).
+**Source pointers.** [Computational hardness: H1 simulation, steps 1–3](../science/computational_hardness.md); [Source preparation: operational ensemble equivalence](../science/source_preparation.md); [Koenig–Smolin2014](../references/RELATED_WORK.md#ks2014). Selected anchor: [Watrous §§2.1.2–2.1.3 and §§2.2.1–2.2.2; the LPN simulation is supplied locally](ANCHOR_BRIDGE.md#m28).
 
 <a id="m29"></a>
 ### M29 — One consumable prediction yields an LPN distinguisher
@@ -387,7 +387,7 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** The ability to make one useful prediction is already an operational distinguishing resource. Improper or consumable output models do not evade this reduction.
 
-**Source pointers.** [Computational hardness: H1, held-out test, and runtime accounting](../science/computational_hardness.md); [Model: single-test identity](../science/model.md); [GL2022](../references/RELATED_WORK.md#gl2022); [PQS2026](../references/RELATED_WORK.md#pqs2026).
+**Source pointers.** [Computational hardness: H1, held-out test, and runtime accounting](../science/computational_hardness.md); [Model: single-test identity](../science/model.md); [GL2022](../references/RELATED_WORK.md#gl2022); [PQS2026](../references/RELATED_WORK.md#pqs2026). Selected anchor: [Watrous §1.2.2, §§2.3.1–2.3.2, and §3.1.1; the computational reduction is supplied locally](ANCHOR_BRIDGE.md#m29).
 
 <a id="m30"></a>
 ### M30 — The combined sample, memory, and time separation
@@ -400,4 +400,4 @@ The map covers the load-bearing ideas and assumptions. Full proofs, exact consta
 
 **Conceptual connection.** Easy preparation, unentangled specimens, a simple optimal measurement, and statistical learnability do not jointly guarantee efficient training. The local-prior variant illustrates how changing a prior can simplify a reduction while changing the quantitative memory bound; it is a separate comparison rather than a replacement for the main theorem.
 
-**Source pointers.** [Model: canonical statements and resource table](../science/model.md); [Interpretation](../science/interpretation.md); [Local-prior variant](../science/local_prior.md); [Related work](../references/RELATED_WORK.md).
+**Source pointers.** [Model: canonical statements and resource table](../science/model.md); [Interpretation](../science/interpretation.md); [Local-prior variant](../science/local_prior.md); [Related work](../references/RELATED_WORK.md). Selected anchor: [Watrous §§2.1–2.3 and §§3.1–3.2; the theorem package and its qualifications are assembled locally](ANCHOR_BRIDGE.md#m30).

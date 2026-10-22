@@ -27,7 +27,7 @@ python verification/run_all.py --output verification/verified_results.json
 |---|---|---|
 | [Source, Bell, and reduction](verify_source_bell.py) | Product eigenvectors; Bell basis vectors and their readout circuits; Clifford-transformed basis vectors from enumerated classical LPN samples | Exact source density matrices, annotation mixtures, Bell probabilities and joint affine-LPN law, null simulation, and the held-out noise identity |
 | [Collective and individual statistics](verify_statistics.py) | Small training-and-test matrices; full labeled and conditional PGM effects; arbitrary pure vectors; adaptive measurement trees | Helstrom second moment, three pairwise root fidelities, PGM validity and error bound, label conditioning, Pauli moment, and heterogeneous transcript inequalities |
-| [Repository integrity](verify_repository.py) | Local documentation and heading maps | Relative links, cited local heading fragments, closed fences, accidental control characters, and exactly M01–M30 in order |
+| [Repository integrity](verify_repository.py) | Local documentation, heading maps, and the learning route | Local links and fragments; unique anchors; closed math and code delimiters; table-safe mathematical notation; exactly M01–M30 with the 14+16 phase split, required fields, and earlier-only dependencies; selected-anchor navigation |
 
 ### Source, Bell, and reduction coverage
 
@@ -55,4 +55,4 @@ Reproducibility means that the cases and pass criteria are fixed. Floating-point
 
 Finite checks cannot prove the asymptotic statements, universal measurement bounds, or hardness assumption. They do not search for efficient general decoders, claim a quantum speedup on the computer running these scripts, or certify the contribution's novelty. The analytic proofs and cited research dependencies remain authoritative.
 
-The documentation checker validates local destinations and the repository's plain-text heading slugs. It does not verify external URLs or substitute for inspecting GitHub's rendered equations and pages. The recorded report is scientific reproducibility material, rather than a development log.
+The documentation checker validates local destinations and the repository's heading slugs. It also rejects observed rendering hazards: literal vertical bars inside table-cell mathematics, the unsupported `\operatorname` macro, and numbered equations without an `aligned` group. Roman mathematical names use `\mathrm`, while table-cell kets and absolute values use `\lvert` and `\rvert`. Grouping numbered formulas prevents GitHub from stacking their individual terms vertically. These checks do not verify external URLs or substitute for inspecting GitHub's rendered equations and pages. The recorded report is scientific reproducibility material, rather than a development log.
