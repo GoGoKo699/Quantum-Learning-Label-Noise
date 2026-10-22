@@ -1,0 +1,1004 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "passed": true,
+  "schema_version": 1,
+  "scope": "Finite numerical and documentation checks; analytic proofs are in science/.",
+  "suites": {
+    "repository": {
+      "documents_checked": 13,
+      "heading_fragments_checked": 142,
+      "milestone_count": 30,
+      "milestone_ids_in_order": true,
+      "relative_links_checked": 280,
+      "scope": "Local links and plain-text heading slugs; not a hosted-rendering test.",
+      "status": "passed",
+      "unclosed_fences": 0,
+      "unexpected_control_characters": 0
+    },
+    "source_bell_reduction": {
+      "absolute_tolerance": 2e-10,
+      "bell_qubits": [
+        1,
+        2,
+        3
+      ],
+      "case_counts": {
+        "annotation_mixture": 1296,
+        "bell_born_law": 832,
+        "bell_lpn_joint": 208,
+        "bell_orthonormality": 3,
+        "bell_readout": 84,
+        "local_collision": 2,
+        "local_moment": 4,
+        "local_second_moment": 9,
+        "lpn_null": 112,
+        "lpn_source": 112,
+        "prediction_noise_identity": 56,
+        "product_source": 324
+      },
+      "local_prior_parity_dimensions": [
+        1,
+        2
+      ],
+      "lpn_dimensions": [
+        1,
+        2,
+        3
+      ],
+      "maximum_absolute_residuals": {
+        "annotation_mixture": 1.1102230246251565e-16,
+        "bell_born_law": 1.1102230246251565e-16,
+        "bell_lpn_joint": 5.551115123125783e-17,
+        "bell_orthonormality": 2.220446049250313e-16,
+        "bell_readout": 6.661338147750939e-16,
+        "local_collision": 0.0,
+        "local_moment": 8.326672684688674e-16,
+        "local_second_moment": 4.87890977618477e-19,
+        "lpn_null": 1.1102230246251565e-16,
+        "lpn_source": 1.1102230246251565e-16,
+        "prediction_noise_identity": 4.440892098500626e-16,
+        "product_source": 1.1102230246251565e-16
+      },
+      "seed": 20261022,
+      "source_qubits": [
+        1,
+        2,
+        3
+      ],
+      "status": "passed"
+    },
+    "statistics": {
+      "checks": {
+        "helstrom_moments": {
+          "case_count": 32,
+          "cases": [
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 2,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 8,
+              "n": 1,
+              "one_example_advantage_residual": 0.0,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 2,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 3,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 2,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 4.336808689942018e-19,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.05749999999999998,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 8,
+              "n": 1,
+              "one_example_advantage_residual": 2.0816681711721685e-17,
+              "passed": true,
+              "second_moment_formula": 0.0022041666666666646,
+              "second_moment_from_matrices": 0.002204166666666665,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.06639528095680693
+            },
+            {
+              "T": 2,
+              "absolute_residual": 4.336808689942018e-19,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.07153097381173679,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0011020833333333323,
+              "second_moment_from_matrices": 0.0011020833333333327,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.09389710680668845
+            },
+            {
+              "T": 3,
+              "absolute_residual": 5.421010862427522e-20,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.09759804502619032,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0004136667601276037,
+              "second_moment_from_matrices": 0.00041366676012760364,
+              "state_trace_residual": 6.661338147750939e-16,
+              "theorem_upper_bound": 0.11505362368949236
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 2,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 1.734723475976807e-17,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.17749999999999994,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 8,
+              "n": 1,
+              "one_example_advantage_residual": 5.551115123125783e-17,
+              "passed": true,
+              "second_moment_formula": 0.021004166666666668,
+              "second_moment_from_matrices": 0.02100416666666665,
+              "state_trace_residual": 3.3306690738754696e-16,
+              "theorem_upper_bound": 0.20495934556231715
+            },
+            {
+              "T": 2,
+              "absolute_residual": 1.214306433183765e-17,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.22081300611449178,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.010502083333333334,
+              "second_moment_from_matrices": 0.010502083333333322,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.28985628622934273
+            },
+            {
+              "T": 3,
+              "absolute_residual": 6.071532165918825e-18,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.2926255778525876,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.004271875739377604,
+              "second_moment_from_matrices": 0.004271875739377598,
+              "state_trace_residual": 8.881784197001252e-16,
+              "theorem_upper_bound": 0.3697296629431879
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 2,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 2.0816681711721685e-17,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.24999999999999992,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 8,
+              "n": 1,
+              "one_example_advantage_residual": 8.326672684688674e-17,
+              "passed": true,
+              "second_moment_formula": 0.041666666666666664,
+              "second_moment_from_matrices": 0.041666666666666644,
+              "state_trace_residual": 3.3306690738754696e-16,
+              "theorem_upper_bound": 0.28867513459481287
+            },
+            {
+              "T": 2,
+              "absolute_residual": 1.734723475976807e-17,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.31100423396407295,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.020833333333333332,
+              "second_moment_from_matrices": 0.020833333333333315,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.408248290463863
+            },
+            {
+              "T": 3,
+              "absolute_residual": 1.0408340855860843e-17,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.42764557620082755,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 1,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.010416666666666666,
+              "second_moment_from_matrices": 0.010416666666666656,
+              "state_trace_residual": 6.661338147750939e-16,
+              "theorem_upper_bound": 0.5
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 4,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 2,
+              "one_example_advantage_residual": 0.0,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 1.1102230246251565e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 2,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 256,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 1.1102230246251565e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 4,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 6.776263578034403e-20,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.028749999999999998,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 2,
+              "one_example_advantage_residual": 3.469446951953614e-18,
+              "passed": true,
+              "second_moment_formula": 0.00011020833333333322,
+              "second_moment_from_matrices": 0.00011020833333333329,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.029692872320923516
+            },
+            {
+              "T": 2,
+              "absolute_residual": 3.3881317890172014e-21,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.03576548690586839,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 256,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 2.7552083333333306e-05,
+              "second_moment_from_matrices": 2.7552083333333303e-05,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.041992062742062713
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 4,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 1.3010426069826053e-18,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.08874999999999994,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 2,
+              "one_example_advantage_residual": 5.551115123125783e-17,
+              "passed": true,
+              "second_moment_formula": 0.0010502083333333333,
+              "second_moment_from_matrices": 0.001050208333333332,
+              "state_trace_residual": 3.3306690738754696e-16,
+              "theorem_upper_bound": 0.0916606058602422
+            },
+            {
+              "T": 2,
+              "absolute_residual": 4.336808689942018e-19,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.11040650305724586,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 256,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.00026255208333333333,
+              "second_moment_from_matrices": 0.0002625520833333329,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.12962767194288932
+            },
+            {
+              "T": 0,
+              "absolute_residual": 0.0,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 4,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 2.220446049250313e-16,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 1.734723475976807e-18,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.12499999999999994,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 32,
+              "n": 2,
+              "one_example_advantage_residual": 5.551115123125783e-17,
+              "passed": true,
+              "second_moment_formula": 0.0020833333333333333,
+              "second_moment_from_matrices": 0.0020833333333333316,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.12909944487358055
+            },
+            {
+              "T": 2,
+              "absolute_residual": 5.421010862427522e-19,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.15550211698203648,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 256,
+              "n": 2,
+              "one_example_advantage_residual": null,
+              "passed": true,
+              "second_moment_formula": 0.0005208333333333333,
+              "second_moment_from_matrices": 0.0005208333333333328,
+              "state_trace_residual": 4.440892098500626e-16,
+              "theorem_upper_bound": 0.18257418583505536
+            },
+            {
+              "T": 1,
+              "absolute_residual": 0.0,
+              "gamma": 0.0,
+              "helstrom_advantage_from_eigenvalues": 0.0,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 3,
+              "one_example_advantage_residual": 0.0,
+              "passed": true,
+              "second_moment_formula": 0.0,
+              "second_moment_from_matrices": 0.0,
+              "state_trace_residual": 3.1086244689504383e-15,
+              "theorem_upper_bound": 0.0
+            },
+            {
+              "T": 1,
+              "absolute_residual": 4.235164736271502e-21,
+              "gamma": 0.23,
+              "helstrom_advantage_from_eigenvalues": 0.014374999999999985,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 3,
+              "one_example_advantage_residual": 1.5612511283791264e-17,
+              "passed": true,
+              "second_moment_formula": 6.560019841269834e-06,
+              "second_moment_from_matrices": 6.56001984126983e-06,
+              "state_trace_residual": 2.220446049250313e-15,
+              "theorem_upper_bound": 0.01448863813202037
+            },
+            {
+              "T": 1,
+              "absolute_residual": 8.131516293641283e-20,
+              "gamma": 0.71,
+              "helstrom_advantage_from_eigenvalues": 0.04437499999999997,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 3,
+              "one_example_advantage_residual": 2.7755575615628914e-17,
+              "passed": true,
+              "second_moment_formula": 6.251240079365079e-05,
+              "second_moment_from_matrices": 6.251240079365071e-05,
+              "state_trace_residual": 2.4424906541753444e-15,
+              "theorem_upper_bound": 0.04472579597275855
+            },
+            {
+              "T": 1,
+              "absolute_residual": 1.3552527156068805e-19,
+              "gamma": 1.0,
+              "helstrom_advantage_from_eigenvalues": 0.062499999999999986,
+              "hermiticity_residual": 0.0,
+              "matrix_dimension": 128,
+              "n": 3,
+              "one_example_advantage_residual": 1.3877787807814457e-17,
+              "passed": true,
+              "second_moment_formula": 0.0001240079365079365,
+              "second_moment_from_matrices": 0.00012400793650793637,
+              "state_trace_residual": 2.220446049250313e-15,
+              "theorem_upper_bound": 0.06299407883487121
+            }
+          ],
+          "passed": true
+        },
+        "heterogeneous_clipping": {
+          "adaptive_born_probability_trees": [
+            {
+              "basis_unitarity_residual": 8.881784197001252e-16,
+              "contrasts": [
+                0.12,
+                0.18,
+                0.22
+              ],
+              "distribution_normalization_residual": 4.440892098500626e-16,
+              "internal_nodes": 21,
+              "leaves": 64,
+              "minimum_averaged_likelihood": 0.9867999999999993,
+              "minimum_raw_born_probability": 0.19499999999999992,
+              "n": 1,
+              "noiseless_zero_probability_endpoint_exercised": null,
+              "passed": true,
+              "row_normalization_residual": 6.661338147750939e-16,
+              "theorem_pointwise_floor": 0.8413333333333334,
+              "theorem_tv_bound": 0.15866666666666665,
+              "total_variation_from_born_probabilities": 0.0037132873936245774,
+              "x": 0.03173333333333333,
+              "zero_born_probabilities": 0
+            },
+            {
+              "basis_unitarity_residual": 8.881784197001252e-16,
+              "contrasts": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "distribution_normalization_residual": 6.661338147750939e-16,
+              "internal_nodes": 73,
+              "leaves": 512,
+              "minimum_averaged_likelihood": 0.9873333333333331,
+              "minimum_raw_born_probability": 0.08749999999999994,
+              "n": 2,
+              "noiseless_zero_probability_endpoint_exercised": null,
+              "passed": true,
+              "row_normalization_residual": 6.661338147750939e-16,
+              "theorem_pointwise_floor": 0.86,
+              "theorem_tv_bound": 0.14,
+              "total_variation_from_born_probabilities": 0.0016520602655564725,
+              "x": 0.028000000000000004,
+              "zero_born_probabilities": 0
+            },
+            {
+              "basis_unitarity_residual": 7.771561172376096e-16,
+              "contrasts": [
+                0.35,
+                1.0
+              ],
+              "distribution_normalization_residual": 2.220446049250313e-16,
+              "internal_nodes": 17,
+              "leaves": 256,
+              "minimum_averaged_likelihood": 0.9611111111111109,
+              "minimum_raw_born_probability": 0.0,
+              "n": 3,
+              "noiseless_zero_probability_endpoint_exercised": true,
+              "passed": true,
+              "row_normalization_residual": 7.771561172376096e-16,
+              "theorem_pointwise_floor": 0.3763888888888889,
+              "theorem_tv_bound": 0.6236111111111111,
+              "total_variation_from_born_probabilities": 0.0019902665239789384,
+              "x": 0.12472222222222223,
+              "zero_born_probabilities": 1120
+            },
+            {
+              "basis_unitarity_residual": 1.1102230246251565e-15,
+              "contrasts": [
+                0.2,
+                0.3,
+                1.0
+              ],
+              "distribution_normalization_residual": 8.881784197001252e-16,
+              "internal_nodes": 273,
+              "leaves": 4096,
+              "minimum_averaged_likelihood": 0.9644444444444441,
+              "minimum_raw_born_probability": 0.0,
+              "n": 3,
+              "noiseless_zero_probability_endpoint_exercised": true,
+              "passed": true,
+              "row_normalization_residual": 7.771561172376096e-16,
+              "theorem_pointwise_floor": 0.37222222222222234,
+              "theorem_tv_bound": 0.6277777777777777,
+              "total_variation_from_born_probabilities": 0.0024150454548234534,
+              "x": 0.12555555555555553,
+              "zero_born_probabilities": 19040
+            }
+          ],
+          "elementary_inequalities": {
+            "g_domain": "1 - 4*x <= g <= 1",
+            "g_grid_points_per_x": 31,
+            "log_domain": [
+              0.0,
+              0.25
+            ],
+            "log_grid_points": 10001,
+            "minimum_combined_inequality_margin": 0.0,
+            "minimum_exponential_inequality_margin": 0.0,
+            "minimum_log_inequality_margin": 0.0,
+            "passed": true,
+            "x_domain": [
+              0.0,
+              0.1999
+            ],
+            "x_grid_points": 501
+          },
+          "passed": true
+        },
+        "individual_pauli_moments": {
+          "case_count": 4,
+          "cases": [
+            {
+              "delta_star": 0.3333333333333333,
+              "entangled_label_feature_vectors": 17,
+              "imaginary_coefficient_residual": 0.0,
+              "maximum_observed_moment": 0.3333333333333334,
+              "minimum_observed_moment": 0.021846062328086963,
+              "n": 1,
+              "parseval_identity_residual": 2.220446049250313e-16,
+              "passed": true,
+              "product_saturators": 4,
+              "saturation_residual": 1.1102230246251565e-16,
+              "vector_count": 21
+            },
+            {
+              "delta_star": 0.2,
+              "entangled_label_feature_vectors": 17,
+              "imaginary_coefficient_residual": 2.7755575615628914e-17,
+              "maximum_observed_moment": 0.2000000000000001,
+              "minimum_observed_moment": 0.0699323483641476,
+              "n": 2,
+              "parseval_identity_residual": 8.881784197001252e-16,
+              "passed": true,
+              "product_saturators": 4,
+              "saturation_residual": 8.326672684688674e-17,
+              "vector_count": 21
+            },
+            {
+              "delta_star": 0.1111111111111111,
+              "entangled_label_feature_vectors": 17,
+              "imaginary_coefficient_residual": 5.551115123125783e-17,
+              "maximum_observed_moment": 0.11111111111111109,
+              "minimum_observed_moment": 0.0432589114495647,
+              "n": 3,
+              "parseval_identity_residual": 1.7763568394002505e-15,
+              "passed": true,
+              "product_saturators": 4,
+              "saturation_residual": 4.163336342344337e-17,
+              "vector_count": 21
+            },
+            {
+              "delta_star": 0.058823529411764705,
+              "entangled_label_feature_vectors": 17,
+              "imaginary_coefficient_residual": 6.982261990806649e-17,
+              "maximum_observed_moment": 0.058823529411764754,
+              "minimum_observed_moment": 0.026188014969667994,
+              "n": 4,
+              "parseval_identity_residual": 3.552713678800501e-15,
+              "passed": true,
+              "product_saturators": 4,
+              "saturation_residual": 4.85722573273506e-17,
+              "vector_count": 21
+            }
+          ],
+          "passed": true
+        },
+        "pretty_good_measurements": {
+          "case_count": 5,
+          "cases": [
+            {
+              "T": 2,
+              "annotation_blocks_evaluated": 3,
+              "annotation_blocks_represented": 4,
+              "annotation_permutation_residual": 0.0,
+              "completeness_residual": 3.3306690738754696e-16,
+              "error_from_matrix_pgm": 0.8156893080869717,
+              "exponential_bound": 4.869483687275285,
+              "feature_block_dimension": 4,
+              "full_cq_vs_conditioned_residual": 2.7755575615628914e-17,
+              "gamma": 0.23,
+              "hypothesis_support_residual": 2.220446049250313e-16,
+              "maximum_fidelity_bound": 4.86775,
+              "minimum_effect_eigenvalue": 0.0,
+              "n": 1,
+              "off_annotation_block_residual": 0.0,
+              "pairwise_bound_is_nontrivial": false,
+              "pairwise_root_fidelity_bound": 4.841299999999996,
+              "passed": true,
+              "target_success_spread": 1.6653345369377348e-16
+            },
+            {
+              "T": 3,
+              "annotation_blocks_evaluated": 4,
+              "annotation_blocks_represented": 8,
+              "annotation_permutation_residual": 2.220446049250313e-16,
+              "completeness_residual": 1.1102230246251565e-15,
+              "error_from_matrix_pgm": 0.5595735096602532,
+              "exponential_bound": 3.4258955515274145,
+              "feature_block_dimension": 8,
+              "full_cq_vs_conditioned_residual": 3.3306690738754696e-16,
+              "gamma": 0.71,
+              "hypothesis_support_residual": 6.661338147750939e-16,
+              "maximum_fidelity_bound": 3.234289226437066,
+              "minimum_effect_eigenvalue": 0.0,
+              "n": 1,
+              "off_annotation_block_residual": 5.168294499859695e-16,
+              "pairwise_bound_is_nontrivial": false,
+              "pairwise_root_fidelity_bound": 2.9366449921086164,
+              "passed": true,
+              "target_success_spread": 5.551115123125783e-16
+            },
+            {
+              "T": 6,
+              "annotation_blocks_evaluated": 7,
+              "annotation_blocks_represented": 64,
+              "annotation_permutation_residual": null,
+              "completeness_residual": 2.583191975951443e-13,
+              "error_from_matrix_pgm": 0.056986359251813834,
+              "exponential_bound": 1.2913496508760387,
+              "feature_block_dimension": 64,
+              "full_cq_vs_conditioned_residual": null,
+              "gamma": 0.95,
+              "hypothesis_support_residual": 1.9984014443252818e-15,
+              "maximum_fidelity_bound": 0.8262160058593754,
+              "minimum_effect_eigenvalue": 0.0,
+              "n": 1,
+              "off_annotation_block_residual": null,
+              "pairwise_bound_is_nontrivial": true,
+              "pairwise_root_fidelity_bound": 0.6618996640624982,
+              "passed": true,
+              "target_success_spread": 1.2212453270876722e-15
+            },
+            {
+              "T": 6,
+              "annotation_blocks_evaluated": 7,
+              "annotation_blocks_represented": 64,
+              "annotation_permutation_residual": null,
+              "completeness_residual": 1.6653345369377348e-15,
+              "error_from_matrix_pgm": 0.015957547040388653,
+              "exponential_bound": 1.115650800742149,
+              "feature_block_dimension": 64,
+              "full_cq_vs_conditioned_residual": null,
+              "gamma": 1.0,
+              "hypothesis_support_residual": 3.1086244689504383e-15,
+              "maximum_fidelity_bound": 0.625,
+              "minimum_effect_eigenvalue": -1.0319473746812405e-15,
+              "n": 1,
+              "off_annotation_block_residual": null,
+              "pairwise_bound_is_nontrivial": true,
+              "pairwise_root_fidelity_bound": 0.4999999999999995,
+              "passed": true,
+              "target_success_spread": 1.7763568394002505e-15
+            },
+            {
+              "T": 2,
+              "annotation_blocks_evaluated": 3,
+              "annotation_blocks_represented": 4,
+              "annotation_permutation_residual": 2.7755575615628914e-17,
+              "completeness_residual": 8.881784197001252e-16,
+              "error_from_matrix_pgm": 0.9257327666982056,
+              "exponential_bound": 22.53897042730389,
+              "feature_block_dimension": 16,
+              "full_cq_vs_conditioned_residual": 5.551115123125783e-17,
+              "gamma": 0.71,
+              "hypothesis_support_residual": 2.220446049250313e-16,
+              "maximum_fidelity_bound": 21.69055,
+              "minimum_effect_eigenvalue": 0.0,
+              "n": 2,
+              "off_annotation_block_residual": 3.31606839617461e-17,
+              "pairwise_bound_is_nontrivial": false,
+              "pairwise_root_fidelity_bound": 21.176010053949973,
+              "passed": true,
+              "target_success_spread": 5.551115123125783e-17
+            }
+          ],
+          "passed": true
+        },
+        "root_fidelities": {
+          "case_count": 8,
+          "cases": [
+            {
+              "gamma": 0.0,
+              "matrix_dimension": 4,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 2.220446049250313e-16,
+                "commuting_distinct": 0.0,
+                "opposite": 2.220446049250313e-16
+              },
+              "n": 1,
+              "passed": true,
+              "same_state_fidelity_residual": 2.220446049250313e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 12,
+                "commuting_distinct": 0,
+                "opposite": 3
+              }
+            },
+            {
+              "gamma": 0.23,
+              "matrix_dimension": 4,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 5.551115123125783e-16,
+                "commuting_distinct": 0.0,
+                "opposite": 3.3306690738754696e-16
+              },
+              "n": 1,
+              "passed": true,
+              "same_state_fidelity_residual": 4.440892098500626e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 12,
+                "commuting_distinct": 0,
+                "opposite": 3
+              }
+            },
+            {
+              "gamma": 0.71,
+              "matrix_dimension": 4,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 4.440892098500626e-16,
+                "commuting_distinct": 0.0,
+                "opposite": 3.3306690738754696e-16
+              },
+              "n": 1,
+              "passed": true,
+              "same_state_fidelity_residual": 6.661338147750939e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 12,
+                "commuting_distinct": 0,
+                "opposite": 3
+              }
+            },
+            {
+              "gamma": 1.0,
+              "matrix_dimension": 4,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 3.3306690738754696e-16,
+                "commuting_distinct": 0.0,
+                "opposite": 2.3615800235104444e-17
+              },
+              "n": 1,
+              "passed": true,
+              "same_state_fidelity_residual": 3.3306690738754696e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 12,
+                "commuting_distinct": 0,
+                "opposite": 3
+              }
+            },
+            {
+              "gamma": 0.0,
+              "matrix_dimension": 8,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 2.220446049250313e-16,
+                "commuting_distinct": 2.220446049250313e-16,
+                "opposite": 2.220446049250313e-16
+              },
+              "n": 2,
+              "passed": true,
+              "same_state_fidelity_residual": 2.220446049250313e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 240,
+                "commuting_distinct": 180,
+                "opposite": 15
+              }
+            },
+            {
+              "gamma": 0.23,
+              "matrix_dimension": 8,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 9.992007221626409e-16,
+                "commuting_distinct": 8.881784197001252e-16,
+                "opposite": 6.661338147750939e-16
+              },
+              "n": 2,
+              "passed": true,
+              "same_state_fidelity_residual": 8.881784197001252e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 240,
+                "commuting_distinct": 180,
+                "opposite": 15
+              }
+            },
+            {
+              "gamma": 0.71,
+              "matrix_dimension": 8,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 3.3306690738754696e-16,
+                "commuting_distinct": 2.220446049250313e-16,
+                "opposite": 2.220446049250313e-16
+              },
+              "n": 2,
+              "passed": true,
+              "same_state_fidelity_residual": 2.220446049250313e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 240,
+                "commuting_distinct": 180,
+                "opposite": 15
+              }
+            },
+            {
+              "gamma": 1.0,
+              "matrix_dimension": 8,
+              "maximum_formula_residual_by_relation": {
+                "anticommuting": 5.551115123125783e-16,
+                "commuting_distinct": 3.3306690738754696e-16,
+                "opposite": 5.54667823983524e-32
+              },
+              "n": 2,
+              "passed": true,
+              "same_state_fidelity_residual": 6.661338147750939e-16,
+              "unordered_pair_counts": {
+                "anticommuting": 240,
+                "commuting_distinct": 180,
+                "opposite": 15
+              }
+            }
+          ],
+          "passed": true
+        }
+      },
+      "environment": {
+        "numpy": "2.3.5",
+        "numpy_pin": "2.3.5",
+        "python": "3.12.14"
+      },
+      "fixed_seed": 20261022,
+      "passed": true,
+      "resource_limits": {
+        "largest_adaptive_tree_leaves": 4096,
+        "largest_dense_matrix_dimension": 256
+      },
+      "schema_version": 1,
+      "suite": "statistics",
+      "tolerances": {
+        "fidelity_absolute": 2e-10,
+        "matrix_absolute": 1e-10,
+        "scalar_relative": 1e-08,
+        "spectral_zero_cutoff": 1e-12
+      }
+    }
+  }
+}

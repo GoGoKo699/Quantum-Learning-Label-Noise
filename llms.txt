@@ -1,0 +1,37 @@
+# Quantum Learning with Label Noise
+
+> A complete mathematical account of a supervised quantum-state task in which annotation noise preserves an exponential collective sample advantage while obstructing efficient learning under quantum decision-LPN hardness.
+
+## Canonical sources
+
+- [Model](science/model.md): exact target prior, source, access assumptions, prediction objective, resource models, and canonical statements K1/B1/S1/S2/H1. Read this before paraphrasing any result.
+- [Source preparation](science/source_preparation.md): pure product realization of every signed-Pauli class state, independent annotation corruption, and operational equivalence of inaccessible ensemble decompositions.
+- [Bell learning](science/bell_learning.md): exact phase-aware Bell-to-affine-LPN law, polynomial-time clean learner, exhaustive noisy decoder, and clean-batch algorithm for vanishing noise.
+- [Collective statistics](science/collective_statistics.md): optimal one-clean-test prediction as a Helstrom problem; exact second moment; pairwise root fidelities; PGM upper bound compatible with classical annotations.
+- [Individual measurements](science/individual_measurements.md): precise no-persistent-quantum-memory comparator; exact Pauli moment; adaptive likelihood clipping with heterogeneous contrasts; clean-test prediction lower bound.
+- [Computational hardness](science/computational_hardness.md): ordinary classical-sample decision-LPN assumption, random-Clifford source simulation, all-quantum single-prediction reduction, and bounded-time sampling precision.
+- [Interpretation](science/interpretation.md): physical and computational meaning, noise regimes, population-risk identity, limited thermal representation, and boundaries of the result.
+- [Local-prior variant](science/local_prior.md): supplementary local-only reduction under a different target prior; weighted moment and sample bounds. Do not substitute its prior or exponential base into the main theorem.
+
+## Learning and verification
+
+- [Milestones](learning/MILESTONES.md): exactly 30 project-defined understanding targets; 14 background/preliminaries and 16 narrative/innovation milestones. This is a common scientific map, not a learner assessment record.
+- [Verification](verification/README.md): reproducible small-matrix and structural checks, commands, tolerances, and limits.
+- [Recorded results](verification/verified_results.json): actual output of the deterministic verification suite in the documented environment.
+- [Related work](references/RELATED_WORK.md): primary sources, exact version/section comparisons, inherited ingredients, and nearby learning interfaces.
+- [Bibliography](references/references.bib): bibliographic records for the cited research.
+
+## Scope distinctions to preserve
+
+- The main target prior is uniform over both signs of all nonidentity n-qubit Paulis. Average-case lower bounds do not say every particular target is hard.
+- Training annotations are independently flipped; the feature preparation and clean test task stay fixed. Quantum gate noise is not modeled.
+- One independent specimen is supplied per example. No latent-state descriptions, coherent preparation oracle, QRAM, or repeated copies of the same latent realization are supplied.
+- The collective statistical optimum permits arbitrary computation and consumable quantum memory. A PGM existence proof is not an efficient quantum circuit.
+- The individual-example comparator permits arbitrary adaptive quantum POVMs and unlimited classical computation, but no persistent quantum memory between examples. It is not a bound on all quantum learners.
+- H1 assumes quantum hardness of ordinary classical decision-LPN at the specified fixed positive noise rate. It covers arbitrary efficient coherent learners and quantum model outputs, without properness or reusability assumptions.
+- The individual-measurement converse appends a clean held-out test for its statistical comparison. The LPN reduction uses an available noisy held-out annotation and incurs a factor gamma in distinguishing advantage.
+- The exact Helstrom second moment yields a trace-norm bound. The displayed finite-sample inequality is not an exact formula for optimal prediction advantage.
+- Bell sensing squares the contrast and the explicit exhaustive decoder has gamma^-4 sample dependence. The unrestricted collective optimum has gamma^-2 dependence; no universal two-copy optimality claim is made.
+- The Bell and LPN reductions change dimension and noise parameters differently. They do not establish same-parameter equivalence.
+- The vanishing-noise positive regime and fixed-rate conditional hardness theorem do not identify a sharp threshold.
+- Primary references support attribution and imported proof ingredients. Finite numerical checks supplement analytic proofs and do not establish hardness or novelty.
