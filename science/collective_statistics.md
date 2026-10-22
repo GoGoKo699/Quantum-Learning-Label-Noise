@@ -23,18 +23,22 @@ For an integer $`T\geq0`$, let $`a_T^*`$ be the largest expected clean-test adva
 For $`n\geq1`$, $`0<\gamma\leq1`$, and an integer $`T\geq1`$,
 
 ```math
+\begin{aligned}
 a_T^*\leq
 \min\left\{\frac12,
 \frac12\sqrt{\frac{(1+\gamma^2)^T-(1-\gamma^2)^T}{M}}\right\}.
+\end{aligned}
 \tag{S1.1}
 ```
 
 For $`T=0`$, $`a_0^*=0`$. Consequently, any learner attaining a prescribed advantage $`a\in(0,1/2)`$ must use
 
 ```math
+\begin{aligned}
 T\geq
 \max\left\{1,
 \left\lceil\frac{\ln(4a^2M)}{\ln(1+\gamma^2)}\right\rceil\right\}.
+\end{aligned}
 \tag{S1.2}
 ```
 
@@ -43,17 +47,21 @@ The logarithmic bound can be weak for small $`n`$ and small $`a`$; equation (S1.
 Conversely, for every $`\delta\in(0,1)`$, a collective pretty-good measurement identifies the signed target with average error at most $`\delta`$ whenever
 
 ```math
+\begin{aligned}
 T\geq
 \left\lceil\frac{4}{\gamma^2}
 \ln\frac{M-1}{\delta}\right\rceil.
+\end{aligned}
 \tag{S1.3}
 ```
 
 On successful identification, measuring $`P`$ on the fresh test predicts its clean label perfectly. Choosing $`\delta=1/2-a`$ therefore gives clean-test advantage at least $`a`$. For each fixed $`a\in(0,1/2)`$, the optimal training-example complexity is
 
 ```math
+\begin{aligned}
 T_{\mathrm{coh}}(n,\gamma,a)=\Theta_a\!\left(\frac{n}{\gamma^2}\right)
 \qquad(n\longrightarrow\infty),
+\end{aligned}
 \tag{S1.4}
 ```
 
@@ -79,15 +87,19 @@ Every procedure that trains a model and later produces one prediction is a binar
 Define the Hermitian operator
 
 ```math
+\begin{aligned}
 X_T=\frac1M\sum_P\tau_P^{\otimes T}\otimes\frac{P}{d}.
+\end{aligned}
 \tag{S1.5}
 ```
 
 Then $`\Omega_+-\Omega_-=2X_T`$. Equal-prior binary state discrimination gives
 
 ```math
+\begin{aligned}
 a_T^*=\frac14\|\Omega_+-\Omega_-\|_1
 =\frac12\|X_T\|_1.
+\end{aligned}
 \tag{S1.6}
 ```
 
@@ -198,7 +210,9 @@ Here $`\mathrm{Tr}(rs)=1/2`$ and $`\det(r)=\det(s)=(1-\gamma^2)/4`$. Thus $`f^2=
 The largest of the three values is
 
 ```math
+\begin{aligned}
 f_{\max}=\sqrt{1-\gamma^2/2}.
+\end{aligned}
 \tag{S1.8}
 ```
 
@@ -216,7 +230,9 @@ A_P=\frac1M\tau_P^{\otimes T},
 On the support of $`G`$, the pretty-good measurement has effects
 
 ```math
+\begin{aligned}
 E_P=G^{-1/2}A_PG^{-1/2},
+\end{aligned}
 \tag{S1.9}
 ```
 
@@ -225,10 +241,12 @@ where the inverse is restricted to the support. Any positive completion on the k
 The standard mixed-state PGM bound gives
 
 ```math
+\begin{aligned}
 P_{\mathrm{err}}^{\mathrm{PGM}}
 \leq\sum_{P\ne Q}\sqrt{p_Pp_Q}\,
 f(\tau_P^{\otimes T},\tau_Q^{\otimes T}),
 \qquad p_P=\frac1M.
+\end{aligned}
 \tag{S1.10}
 ```
 

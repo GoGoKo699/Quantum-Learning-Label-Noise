@@ -27,23 +27,29 @@ For distributions $`p,q`$, use total variation
 Let $`n\geq1`$, $`0<\gamma\leq1`$, and $`T\geq0`$ be an integer. If an individual-example trainer using $`T`$ training examples of contrast $`\gamma`$ achieves expected advantage $`a\in(0,1/2)`$ on one independent clean test example, then
 
 ```math
+\begin{aligned}
 a\leq\frac{5(T\gamma^2+1)}{d+1}.
+\end{aligned}
 \tag{S2.1}
 ```
 
 In particular,
 
 ```math
+\begin{aligned}
 T\geq
 \max\left\{0,
 \left\lceil\frac{a(d+1)/5-1}{\gamma^2}\right\rceil\right\}.
+\end{aligned}
 \tag{S2.2}
 ```
 
 When its numerator is nonpositive, (S2.2) is a valid but uninformative bound. For fixed positive $`a`$ and sufficiently large $`n`$, it gives
 
 ```math
+\begin{aligned}
 T=\Omega_a\!\left(\frac{2^n}{\gamma^2}\right),
+\end{aligned}
 \tag{S2.3}
 ```
 
@@ -66,7 +72,9 @@ a_\phi(Q)=\langle\phi|Z_C\otimes Q|\phi\rangle,
 Then
 
 ```math
+\begin{aligned}
 \delta_*=\frac1{d+1}.
+\end{aligned}
 \tag{S2.4}
 ```
 
@@ -82,8 +90,10 @@ Write
 and set $`B=|u\rangle\langle u|-|v\rangle\langle v|`$. Then $`a_\phi(Q)=\mathrm{Tr}(BQ)`$. Unsigned Paulis, including the identity, form an orthogonal Hermitian operator basis with $`\mathrm{Tr}(QQ')=d\,\mathbf1\{Q=Q'\}`$. Hence
 
 ```math
+\begin{aligned}
 \sum_{Q\ne I}\mathrm{Tr}(BQ)^2
 =d\mathrm{Tr}(B^2)-\mathrm{Tr}(B)^2.
+\end{aligned}
 \tag{S2.5}
 ```
 
@@ -114,9 +124,11 @@ Dividing by $`d^2-1`$ proves the upper bound in (S2.4). Equality is attained by 
 Fix an integer $`m\geq0`$ and predetermined contrasts $`\gamma_1,\ldots,\gamma_m\in[0,1]`$. Let $`p`$ be the complete transcript distribution of any adaptive individual-example protocol when $`P`$ is sampled once from the signed-Pauli prior and the examples are $`\tau_P(\gamma_t)`$. Let $`q`$ be the transcript distribution of the same protocol on the null examples. Then
 
 ```math
+\begin{aligned}
 \mathrm{TV}(p,q)
 \leq\min\left\{1,
 5\delta_*\sum_{t=1}^m\gamma_t^2\right\}.
+\end{aligned}
 \tag{S2.6}
 ```
 
@@ -141,8 +153,10 @@ a_t(Q)=\langle\phi_t|Z_C\otimes Q|\phi_t\rangle.
 Therefore the likelihood ratio for that leaf under a fixed hidden $`\sigma Q`$ is
 
 ```math
+\begin{aligned}
 L_{\sigma,Q}=\prod_{t=1}^m
 \left[1+\sigma\gamma_t a_t(Q)\right].
+\end{aligned}
 \tag{S2.7}
 ```
 
@@ -204,7 +218,9 @@ For example, the derivative of $`\ln(1-u)+2u`$ is nonnegative on this interval a
 Consequently,
 
 ```math
+\begin{aligned}
 L\geq g e^{-x/g}\geq g-x\geq1-5x,
+\end{aligned}
 \tag{S2.8}
 ```
 

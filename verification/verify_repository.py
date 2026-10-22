@@ -230,6 +230,11 @@ def run_checks() -> dict:
             errors.append(f"{relative}: unexpected control characters {controls}")
         if any(r"\operatorname" in expression for expression in math_expressions(text)):
             errors.append(f"{relative}: unsupported GitHub math macro \\operatorname")
+        if any(
+            r"\tag{" in expression and r"\begin{aligned}" not in expression
+            for expression in math_expressions(text)
+        ):
+            errors.append(f"{relative}: numbered math needs an aligned group for GitHub rendering")
         prose = "\n".join(prose_lines(text))
         if path in required and not text.strip():
             errors.append(f"{relative}: required document is empty")
